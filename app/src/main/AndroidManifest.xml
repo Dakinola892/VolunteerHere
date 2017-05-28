@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dakin.volunteer2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".searchresults" />
+        <activity android:name=".charitycatergories" />
+        <activity
+            android:name=".charityform"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_charityform">
+            <intent-filter>
+                <action android:name="com.example.dakin.volunteer2.charitycatergories" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            android:theme="@style/FullscreenTheme">
+        </activity>
+    </application>
+
+</manifest>
